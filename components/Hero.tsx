@@ -49,7 +49,6 @@ export default function Hero() {
                 position: "relative", textAlign: "center", zIndex: 1,
             }}
         >
-            {/* Ambient orbs */}
             {[
                 { w: 700, h: 700, bg: "rgba(6,78,59,0.4)", top: "-200px", right: "-200px", left: "auto", bottom: "auto" },
                 { w: 500, h: 500, bg: "rgba(16,185,129,0.1)", bottom: "10%", left: "-150px", top: "auto", right: "auto" },
@@ -64,9 +63,7 @@ export default function Hero() {
                     transform: i === 2 ? "translate(-50%,-50%)" : undefined,
                 }} />
             ))}
-
             <div style={{ maxWidth: 780, margin: "0 auto", position: "relative", zIndex: 1 }}>
-                {/* Eyebrow */}
                 <div className="animate-fade-up" style={{
                     display: "inline-flex", alignItems: "center", gap: 8,
                     background: "rgba(16,185,129,0.1)",
@@ -82,7 +79,6 @@ export default function Hero() {
                     AI-Powered IELTS Preparation — Built for Uzbekistan
                 </div>
 
-                {/* Headline */}
                 <h1 className="animate-fade-up delay-100" style={{
                     fontFamily: "'Playfair Display',serif",
                     fontSize: "clamp(2.6rem, 6vw, 5rem)",
@@ -98,7 +94,6 @@ export default function Hero() {
                     }}>Our AI Makes it the Easiest.</span>
                 </h1>
 
-                {/* Sub */}
                 <p className="animate-fade-up delay-200" style={{
                     fontSize: "clamp(1rem,2vw,1.2rem)",
                     color: "rgba(255,255,255,0.55)",
@@ -108,7 +103,6 @@ export default function Hero() {
                     Get instant band scores, detailed error analysis, and 21-day personalized writing drills designed to take you from Band 5 to Band 7+.
                 </p>
 
-                {/* CTAs */}
                 <div className="animate-fade-up delay-300" style={{
                     display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap",
                 }}>
@@ -131,7 +125,6 @@ export default function Hero() {
                             (e.currentTarget as HTMLElement).style.transform = "";
                             (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 30px rgba(16,185,129,0.35)";
                         }}>
-                        {/* Glow ring */}
                         <span className="animate-glow-pulse" style={{
                             position: "absolute", inset: -3, borderRadius: 9999,
                             background: "linear-gradient(135deg,#34D399,#F59E0B)",
@@ -162,7 +155,6 @@ export default function Hero() {
                     </button>
                 </div>
 
-                {/* Stats */}
                 <div ref={countersRef} className="animate-fade-up delay-400" style={{
                     display: "flex", gap: 48, justifyContent: "center", flexWrap: "wrap",
                     marginTop: 72, paddingTop: 48,
@@ -186,7 +178,6 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Scroll indicator */}
             <div style={{
                 position: "absolute", bottom: 40, left: "50%", transform: "translateX(-50%)",
                 display: "flex", flexDirection: "column", alignItems: "center", gap: 8,
